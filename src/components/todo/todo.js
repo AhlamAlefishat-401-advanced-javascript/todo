@@ -49,7 +49,9 @@ function ToDo() {
       <header>
         <Header />
       </header>
+
       <Container>
+        
         <Row className="justify-content-md-center">
           <Col><h2>
           To Do List Manager ({todo.filter(item => !item.complete).length})
