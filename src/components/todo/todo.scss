@@ -4,6 +4,7 @@ body, html {
     padding:0;
     width: 100%;
 }
+
 .container{
     margin-top: 3%;
 }
@@ -12,70 +13,107 @@ h2{
     padding: 1%;
     color: white;
 }
+.complete-complete {
+    color: white;
+    background: red;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+.complete-pending {
+    color: white;
+    background: green;
+    border: 2px solid green;
+    border-radius: 20px;
+}
+.firstRow{
+    border-bottom: 1px solid #cecccc;
+    padding: 1%;
+}
+.text-end{
+    text-align: end;
+}
+.form{
+    border: 1px solid darkgray;
+    border-radius: 2%;
+    padding: 1%;
+    margin-right: 8%;
+}
 .todo-details {
     display:flex;
     flex-direction:column;
+
     header {
         display:flex;
         flex-direction:row;
         justify-content:space-between;
         padding:.5em 1em;
     }
+
     .item {
         flex:1;
         padding: 1em;
     }
+
 }
+
 .todo {
+
     display:flex;
     flex-direction:row;
     justify-content: flex-start;
     margin: 2em;
+
     form {
+
         display:flex;
         flex-direction:column;
         margin-right: 2em;
+
         label {
             display: flex;
             flex-direction:column;
             margin-bottom: 1em;
         }
     }
+
     .ul {
         list-style-type:none;
         margin:0;
         padding:0;
+
         .li {
-            &.complete-true {
-              span {
-                background: pink;
-                text-decoration:line-through;
-                &:hover {
-                   background: rgb(161, 165, 163);
-                }
-              }
+
+            box-shadow: 0px 2px 12px #888888;
+            padding-top: 1%;
+
+            &.complete-complete {
+                    background: red;
             }
+
             span {
-                background: rgb(188, 235, 209);
+                background: #e0e0e0;
                 cursor:pointer;
                 &:hover {
                     background: pink;
                 }
             }
              span, input {
-                 border: .5px solid rgb(192, 214, 170);
+                 border: .5px solid #eee;
                  display:inline-block;
                  padding: .2em .25em;
                  width: 100%;;
              }
+
             button {
                 background: transparent;
                 border:none;
-                color:rgb(58, 58, 185);
+                color:blue;
                 cursor:pointer;
                 padding:0;
                 margin: 0 .75em;
             }
+
         }
     }
-}
+
+} 
